@@ -3,37 +3,44 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Offline Menu</title>
+	<title>Diageo's Uniquely Yours</title>
 	<link rel="manifest" href="./manifest.json" />
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/animate.css">
+
 	<link rel="stylesheet" href="./css/style.css">
+
+	<!--Specifying a Webpage Icon for Web Clip-->
+	<!--<link rel="apple-touch-icon" sizes="152x152" href="./img/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="./img/touch-icon-ipad-retina.png">-->
+	<link rel="apple-touch-icon" sizes="152x152" href="./img/menu/152.jpg">
+	<link rel="apple-touch-icon" sizes="167x167" href="./img/menu/167.jpg">
+
+	<!--Specifying a Launch Screen Image-->
+	<!-- <link rel="apple-touch-startup-image" href="/launch.png">-->
+	<!-- iPad (portrait) SPLASHSCREEN-->
+	<!--<link href="./img/apple-touch-startup-image.png" media="(device-width: 768px) and (orientation: portrait)" rel="apple-touch-startup-image">-->
+	<!-- iPad (Retina, portrait) SPLASHSCREEN-->
+	<!--<link href="./img/apple-touch-startup-image-retina.png" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">-->
+	<!--Adding a Launch Icon Title-->
+	<meta name="apple-mobile-web-app-title" content="Diageo's Uniquely Yours">
+
+	<!--Hiding Safari User Interface Components-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<!--Changing the Status Bar Appearance-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
 </head>
-<body id="offline-menu" ng-controller="menuCtrl" class="d-flex align-items-center justify-content-center">
+<body id="offline-main" ng-controller="menuCtrl">
 
 	<div class="container">
 		<div class="row">
-			<div class="col-10 mx-auto text-center">
-				<h1>Offline Menu</h1>
-			</div>
-			<div class="col-10 mx-auto my-2">
-				<button class="btn btn-light border-secondary btn-block" ng-repeat="m in menu" data-toggle="modal" data-target="#{{m.name}}">{{m.name}}</button>
+			<div class="col-12 text-center">
+				<button class="btn bg-white animated zoomIn" onclick="window.open('menu.html', '_parent')" >BEGIN THE EXPERIENCE</button>
 			</div>
 		</div>
 	</div>
-	<!-- The Modal -->
-	<div class="modal fade" id="{{m.name}}" ng-repeat="m in menu">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<button type="button" class="close btn-block text-right p-3" data-dismiss="modal">&times;</button>
-				<!-- Modal body -->
-				<div class="modal-body text-center">
-					<h1>{{m.name}}</h1>
-					<p ng-repeat="item in m.items_list">{{item}}</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
+	
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/popper.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>

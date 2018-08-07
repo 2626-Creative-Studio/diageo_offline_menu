@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html ng-app="offline-menu"  manifest="offline-menu.appcache">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Diageo's Uniquely Yours</title>
+	<link rel="manifest" href="./manifest.json" />
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/animate.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!--Specifying a Webpage Icon for Web Clip-->
+	<link rel="apple-touch-icon" sizes="152x152" href="./img/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="./img/touch-icon-ipad-retina.png">
+
+	<!--Specifying a Launch Screen Image-->
+	<!-- <link rel="apple-touch-startup-image" href="/launch.png">-->
+	<!-- iPad (portrait) SPLASHSCREEN-->
+	<link href="./img/apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (orientation: portrait)" rel="apple-touch-startup-image">
+	<!-- iPad (Retina, portrait) SPLASHSCREEN-->
+	<link href="./img/apple-touch-startup-image-1536x2008.png" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+	<!--Adding a Launch Icon Title-->
+	<meta name="apple-mobile-web-app-title" content="Diageo">
+
+	<!--Hiding Safari User Interface Components-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<!--Changing the Status Bar Appearance-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+</head>
+<body id="offline-menu" ng-controller="menuCtrl">
+
+	<div class="container-fluid text-center">
+			<div class="col-12 text-right">
+				<button class="btn btn-link text-dark p-3" onclick="window.open('index.html', '_parent')" style="text-decoration: none;font-size: 1.2rem!important;padding-right: 0!important;">Back</button>
+			</div>	 
+		<div class="row pb-3">
+
+			<div class="col-2 h-10 d-flex justify-content-center align-items-center">
+				<img class="w-80" src="img/menu/spotlights.gif" alt="Icon" />
+			</div>
+			<div class="col-8 h-10 d-flex justify-content-center align-items-center">
+				<h3 class="">SELECT YOUR OCCASION FOR A<br />BESPOKE BAR EXPERIENCE</h3>
+			</div>
+			<div class="col-2 h-10 d-flex justify-content-center align-items-center">
+				<img class="w-80" src="img/menu/spotlights.gif" alt="Icon" />
+			</div>
+
+		</div>
+		<div class="row px-4 pb-4">
+			<div class="col-6 img1 h-30 d-flex align-items-center justify-content-center p-0 border border-white">
+				<button type="button" class="btn bg-transparent text-white h-100 w-100" data-toggle="modal" data-target="#myModal1">BACHELOR PARTY</button>
+				<!-- The Modal -->
+				<div class="modal" id="myModal1">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content bachelor">
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">Close</button>
+							</div>
+							<!-- Modal body -->
+							<div class="modal-body d-flex justify-content-end align-items-end">
+								<div class="row pb-4">
+									<div class="col-12">
+										<h1 class="h1">BACHELOR'S</h1>
+										<h1 class="h2">Party</h1>
+									</div>
+									<div class="col-12">
+										<img src="img/menu/ribbon.png" alt="ribbon" />
+										<h4 class="h4">COCKTAIL MENU</h4>
+									</div>
+									<div class="container">
+										<div class="row menu-content">
+											<div class="col-6">
+												<h6>Johnnie Ginger</h6>
+												<p>Johnnie Walker Black Label, Fresh Ginger Juice, Maple Syrup, Lime</p>
+											</div>
+											<div class="col-6">
+												<h6>Dutch Cosmo</h6>
+												<p>Ketel One Vodka, Apricot Syrup, Cranberry Juice, Lime</p>
+											</div>
+										</div>
+										<div class="row menu-content">
+											<div class="col-6">
+												<h6>Monsoon Mojito</h6>
+												<p>Captain Morgan’s Dark Rum, Honey, Lime, Mint</p>
+											</div>
+											<div class="col-6">
+												<h6>Straight Porus</h6>
+												<p>
+													Johnnie Walker Black Label, Ketel One Vodka, Captain Morgan Dark Rum
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 img2 h-30 d-flex align-items-center justify-content-center p-0 border border-white">
+				<button type="button" class="btn bg-transparent text-white h-100 w-100" data-toggle="modal" data-target="#myModal2">SANGEET</button>
+				<!-- The Modal -->
+				<div class="modal" id="myModal2">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content sangeet">
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">Close</button>
+							</div>
+							<!-- Modal body -->
+							<div class="modal-body d-flex justify-content-end align-items-end">
+								<div class="row pb-4">
+									<div class="col-12">
+										<h1 class="h1">OCCASION OF</h1>
+										<h1 class="h2">Sangeet</h1>
+									</div>
+									<div class="col-12">
+										<img src="img/menu/ribbon.png" alt="ribbon" />
+										<h4 class="h4">COCKTAIL MENU</h4>
+									</div>
+									<div class="container">
+										<div class="row menu-content" style="">
+											<div class="col-6">
+												<h6>Queen Victoria</h6>
+												<p>
+													Whisky, lemon, honey, water and
+													armada - a sour mango -ginger
+													from Kolkata
+												</p>
+											</div>
+											<div class="col-6">
+												<h6>Tanqueray Rose Fizz</h6>
+												<p>
+													A fresh and perfumed mix of
+													Tanqueray gin, citrus & homemade
+													rose syrup.
+												</p>
+											</div>
+										</div>
+										<div class="row menu-content">
+											<div class="col-6">
+												<h6>Johnnie Ginger</h6>
+												<p>Johnnie Walker Black Label, Fresh Ginger Juice, Maple Syrup, Lime</p>
+											</div>
+											<div class="col-6">
+												<h6>Dutch Cosmo</h6>
+												<p>Ketel One Vodka, Apricot Syrup, Cranberry Juice, Lime</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 img3 h-30 d-flex align-items-center justify-content-center p-0 border border-white">
+				<button type="button" class="btn bg-transparent text-white h-100 w-100" data-toggle="modal" data-target="#myModal3">COCKTAIL</button>
+				<!-- The Modal -->
+				<div class="modal" id="myModal3">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content cocktail">
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">Close</button>
+							</div>
+							<!-- Modal body -->
+							<div class="modal-body d-flex justify-content-end align-items-end">
+								<div class="row pb-4">
+									<div class="col-12">
+										<h1 class="h1">MEMORABLE</h1>
+										<h1 class="h2">Cocktail</h1>
+									</div>
+									<div class="col-12">
+										<img src="img/menu/ribbon.png" alt="ribbon" />
+										<h4 class="h4">COCKTAIL MENU</h4>
+									</div>
+									<div class="container">
+										<div class="row menu-content">
+											<div class="col-6">
+												<h6>Johnnie Ginger</h6>
+												<p>Johnnie Walker Black Label, Fresh Ginger Juice, Maple Syrup, Lime</p>
+											</div>
+											<div class="col-6">
+												<h6>Dutch Cosmo</h6>
+												<p>Ketel One Vodka, Apricot Syrup, Cranberry Juice, Lime</p>
+											</div>
+										</div>
+										<div class="row menu-content">
+											<div class="col-6">
+												<h6>Monsoon Mojito</h6>
+												<p>Captain Morgan’s Dark Rum, Honey, Lime, Mint</p>
+											</div>
+											<div class="col-6">
+												<h6>Straight Porus</h6>
+												<p>
+													Johnnie Walker Black Label, Ketel One Vodka, Captain Morgan Dark Rum
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 img4 h-30 d-flex align-items-center justify-content-center p-0 border border-white">
+				<button type="button" class="btn bg-transparent text-white h-100 w-100" data-toggle="modal" data-target="#myModal4">RECEPTION</button>
+				<!-- The Modal -->
+				<div class="modal" id="myModal4">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content reception">
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">Close</button>
+							</div>
+							<!-- Modal body -->
+							<div class="modal-body d-flex justify-content-end align-items-end">
+								<div class="row pb-4">
+									<div class="col-12">
+										<h1 class="h1">RECEPTION</h1>
+										<h1 class="h2">Party</h1>
+									</div>
+									<div class="col-12">
+										<img src="img/menu/ribbon.png" alt="ribbon" />
+										<h4 class="h4">COCKTAIL MENU</h4>
+									</div>
+									<div class="container">
+										<div class="row menu-content">
+											<div class="col-6">
+												<h6 class="text-uppercase">City of Nizams</h6>
+												<p>
+													Gin infused with young turmeric
+													and orange syrup: served with Indian
+													tonic water.
+												</p>
+											</div>
+											<div class="col-6">
+												<h6 class="text-uppercase">Queen Victoria</h6>
+												<p>
+													Whisky, lemon, honey, water and
+													armada - a sour mango -ginger
+													from Kolkata
+												</p>
+											</div>
+										</div>
+										<div class="row menu-content">
+											<div class="col-6">
+												<h6 class="text-uppercase">Tanqueray Rose Fizz</h6>
+												<p>
+													A fresh and perfumed mix of
+													Tanqueray gin, citrus & homemade
+													rose syrup.
+												</p>
+											</div>
+											<div class="col-6">
+												<h6 class="text-uppercase">Independence Spritz</h6>
+												<p>
+													Subtle hints of cocoa match with
+													luxurious Ciroc vodka, binaco vermouth,
+													citrus & spritzed up with soda.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 img5 h-30 d-flex align-items-center justify-content-center p-0 border border-white">
+				<button type="button" class="btn bg-transparent text-white h-100 w-100" data-toggle="modal" data-target="#myModal5">WEDDING DAY</button>
+				<!-- The Modal -->
+				<div class="modal" id="myModal5">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content wedding-day">
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">Close</button>
+							</div>
+							<!-- Modal body -->
+							<div class="modal-body d-flex justify-content-end align-items-end">
+								<div class="row pb-4">
+									<div class="col-12">
+										<h1 class="h1">THE DAY OF THE</h1>
+										<h1 class="h2">Wedding</h1>
+									</div>
+									<div class="col-12">
+										<img src="img/menu/ribbon.png" alt="ribbon" />
+										<h4 class="h4">COCKTAIL MENU</h4>
+									</div>
+									<div class="container">
+										<div class="row menu-content">
+											<div class="col-6">
+												<h6 class="text-uppercase">City of Nizams</h6>
+												<p>
+													Gin infused with young turmeric
+													and orange syrup: served with Indian
+													tonic water.
+												</p>
+											</div>
+											<div class="col-6">
+												<h6 class="text-uppercase">Queen Victoria</h6>
+												<p>
+													Whisky, lemon, honey, water and
+													armada - a sour mango -ginger
+													from Kolkata
+												</p>
+											</div>
+										</div>
+										<div class="row menu-content">
+											<div class="col-6">
+												<h6 class="text-uppercase">Tanqueray Rose Fizz</h6>
+												<p>
+													A fresh and perfumed mix of
+													Tanqueray gin, citrus & homemade
+													rose syrup.
+												</p>
+											</div>
+											<div class="col-6">
+												<h6 class="text-uppercase">Independence Spritz</h6>
+												<p>
+													Subtle hints of cocoa match with
+													luxurious Ciroc vodka, binaco vermouth,
+													citrus & spritzed up with soda.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/angular.min.js"></script>
+	<script src="./js/ngStorage.min.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>
